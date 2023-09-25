@@ -1,0 +1,53 @@
+.todo-wrapper{
+    --todo-bg: #45CFDD;
+    --todo-buttons: #A7EDE7;
+    --todo-font: #6527BE;
+    --todo-light-font: #9681EB;
+    width: 75%;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: var(--todo-bg);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #6527BE 0px 3px 8px;
+}
+::placeholder{
+    color: var(--todo-light-font);
+}
+.todo__title{
+    font-size: 3rem;
+}
+.todo__label-item{
+    margin-right: 20px;
+}
+input{
+    margin-right: 10px;
+    background-color: var(--todo-bg);
+    color: var(--todo-font);
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.checkbox{
+    margin-right: 10px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    color: var(--todo-font);
+    background-color: var(--todo-buttons);
+    border-radius: 5px;
+    
+}
+.todo__label-item--completed {
+    text-decoration: line-through;
+}
